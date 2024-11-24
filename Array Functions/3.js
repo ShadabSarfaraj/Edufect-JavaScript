@@ -1,5 +1,5 @@
 const names = ["Jack", "Ana", "Sam", "Tim", "Julia"];
-const ch = "J";
+const ch = "S";
 
 // function to check whether first element first character matches with ch or not ?
 function isStarting(st, ch) {
