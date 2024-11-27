@@ -9,6 +9,7 @@ let stData = [
 
 let copyDesc = [...stData];
 let copyTotalMarks = [...stData];
+let copyMaths = [...stData];
 // Task 14.1
 // stData.sort(sortNameAsc);
 // function sortNameAsc(str1, str2) {
@@ -34,4 +35,20 @@ function sortAccToTotalMarks(stJSON1, stJSON2) {
   else return 0;
 }
 copyTotalMarks.sort(sortAccToTotalMarks);
-console.log(copyTotalMarks);
+// console.log(copyTotalMarks);
+
+
+// Task 14.4
+function sortAccToMathsInDesc(stJSON1,stJSON2){
+    let marksInMaths1 = stJSON1.maths;
+    let marksInMaths2 = stJSON2.maths;
+    if(marksInMaths1>marksInMaths2)
+      return -1;
+    else if(marksInMaths1<marksInMaths2)
+      return 1;
+    else 
+      return 0;
+}
+
+copyMaths.sort(sortAccToMathsInDesc);
+console.log(copyMaths);
