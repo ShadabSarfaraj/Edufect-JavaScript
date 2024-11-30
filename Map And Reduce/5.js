@@ -9,13 +9,13 @@ const prods = [
 // Create a array of json which contians fields - name and value
 // value = qty*price
 
-const array = prods.map(function(ele){
-    const value = ele.qty * ele.price;
-    const json1 = {name:ele.name,value:value};
-    return json1;
+const array = prods.map(function (ele) {
+  const value = ele.qty * ele.price;
+  const json1 = { name: ele.name, value: value };
+  return json1;
 });
-function sortAccToValueInDescOrder(prod1,prod2){
-    return prod2.value-prod1.value;
+function sortAccToValueInDescOrder(prod1, prod2) {
+  return prod2.value - prod1.value;
 }
 array.sort(sortAccToValueInDescOrder);
 console.log(array);
